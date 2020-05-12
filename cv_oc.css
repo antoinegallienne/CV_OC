@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: 'Quintessential-Regular';
+    src: url('Docs/Quintessential-Regular.ttf');
+}
+@font-face {
+    font-family: 'NotoMono-Regular';
+    src: url('Docs/NotoMono-Regular.ttf');
+}
+
+/* -----------------   Page CV  -----------------*/
+
+.bloc_page{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+/*------------- colonne contact ------------------*/
+
+.col_contact{
+    color: black;
+    background: rgb(100,160,130); /* vert */
+    width: 30%;
+    height: 1010px;
+}
+
+.photo{
+    text-align: center;
+    height: 150px;
+    margin: 30px 0 0 0;
+}
+
+
+.col_contact h2{
+    font-size: 21px;
+    color: rgb(200,200,200);
+    background: rgb(87,87,88); /* couleur gris foncé */
+    padding: 9px 0 8px  0;
+    text-align: center;
+
+}
+
+.col_contact h3{
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 25px;
+}
+
+/*.contact h2{
+    color: white;
+    letter-spacing: 5px;
+}*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+}
+
+.contact, p{
+    padding: 0;
+    margin: 0 10px 20px 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.a_propos p{
+    padding: 0;
+    margin: 30px 10px 130px 20px;
+}
+
+.loisir p{
+    text-align: center;
+    padding: 0;
+    margin: 20px 10px 15px 20px;
+}
+
+ /*--------- colonne profession ---------------*/
+
+.col_profession {
+    display: flex;
+	flex: 2;
+    flex-direction: column;
+    font-family: 'Quintessential-Regular';
+    background: rgb(230,230,230); /* couleur gris claire */
+    width: 50%;
+    height: 1010px;
+    overflow: auto;
+}
+
+.col_profession ul{
+    list-style-type:square;
+    font-weight: none;
+}
+
+.titre {
+    text-align: left;
+    /*margin: 70px 0 28px 0;*/
+    padding: 70px 0 15px 90px;
+}
+.titre h1{
+    font-family: 'NotoMono-Regular';
+    margin: 0;
+}
+.titre h2{
+    font-size: 19px;
+    margin: 0;
+}
+
+.formation{
+    color: black;
+    min-width: 450px;
+    margin: 30px 0 10px 50px;
+    padding: 0 10px 0 0;
+}
+.experience{
+    color: black;
+    min-width: 450px;
+    margin: 0 0 20px 50px;
+    padding: 0 10px 0 0;
+}
+/*
+.formation h2 {
+    margin: 0 0 0 0px;
+}
+.experience h2 {
+    margin: 0 0 0 10px;
+}*/
+
+/*  -----------------  pour les écrans de moins de 790 px -------------*/
+
+@media screen and (max-width: 790px) {
+   .bloc_page{
+       flex-direction: column-reverse;
+        margin: auto;
+    }
+
+  .col_profession {
+        display: flex;
+        margin: auto;
+        width: 510px;
+    }
+
+    .col_contact {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 510px;
+
+    }
