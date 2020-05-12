@@ -94,7 +94,7 @@ a{
 }
 
 .col_profession ul{
-    list-style-type:string;
+    list-style-type:square;
     font-weight: none;
 }
 
