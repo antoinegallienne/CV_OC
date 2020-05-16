@@ -49,11 +49,6 @@
     margin: 0 0 0 25px;
 }
 
-/*.contact h2{
-    color: white;
-    letter-spacing: 5px;
-}*/
-
 .contact {
     display: flex;
     flex-direction: column;
@@ -94,7 +89,7 @@ a{
 }
 
 .col_profession ul{
-    list-style-type:square;
+    list-style-type: "* ";
     font-weight: none;
 }
 
@@ -132,24 +127,39 @@ a{
     margin: 0 0 0 10px;
 }*/
 
-/*  -----------------  pour les écrans de moins de 790 px -------------*/
+/*  -----------------  pour les écrans de moins de 750 px -------------*/
 
-@media screen and (max-width: 790px) {
-   .bloc_page{
+@media screen and (max-width: 750px) {
+    .bloc_page{
        flex-direction: column-reverse;
         margin: auto;
+        min-width: 480px;
+
     }
 
-  .col_profession {
-        display: flex;
+    .col_profession {
         margin: auto;
         width: 510px;
     }
 
     .col_contact {
-        display: flex;
-        flex-direction: column;
         margin: auto;
         width: 510px;
-
     }
+    .photo{
+      display: none;
+    }
+    .col_contact{
+           height: 650px;
+    }
+    .contact {
+              height: 200px;
+    }
+    .contact, p{
+            margin: 0 10px 20px 50px;
+    }
+    .a_propos p{
+              margin: 30px 10px 70px 30px;
+    }
+
+}
