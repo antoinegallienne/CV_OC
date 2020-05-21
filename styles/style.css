@@ -20,7 +20,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     max-width: 55em;
+<<<<<<< HEAD
     height: 84.5em;
+=======
+    height: 105em;
+>>>>>>> master
     margin: auto;
 }
 body a{
@@ -51,7 +55,11 @@ body a{
 .contact{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     margin: 2em 1em 8em 1em;
+=======
+    margin: 2em 1em 28em 1em;
+>>>>>>> master
 }
 .inter{
     margin: 1em 0 1em 0;
@@ -177,7 +185,11 @@ list-style-image:url("../docs/ipuce.png") ;
     body{
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
         height: 143.2em;
+=======
+        height: 168.7em;
+>>>>>>> master
         margin: auto;
     }
     body a{
