@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     max-width: 55em;
-    height: 84em;
+    height: 105em;
     margin: auto;
 }
 body a{
@@ -51,7 +51,7 @@ body a{
 .contact{
     display: flex;
     flex-direction: column;
-    margin: 2em 1em 3em 1em;
+    margin: 2em 1em 28em 1em;
 }
 .inter{
     margin: 1em 0 1em 0;
@@ -177,7 +177,7 @@ list-style-image:url("../docs/ipuce.png") ;
     body{
         display: flex;
         flex-direction: column;
-        height: 143em;
+        height: 168.7em;
         margin: auto;
     }
     body a{
@@ -185,6 +185,11 @@ list-style-image:url("../docs/ipuce.png") ;
     }
     .col_contact{
         min-width: 29em;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 2em 1em 3em 1em;
     }
     .a_propos p {
         margin: 2em 1em 4em 1em;
