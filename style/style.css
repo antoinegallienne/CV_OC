@@ -1,65 +1,65 @@
 
 @font-face {
     font-family: 'quintessentialregular';
-    src: url('../docs/font2/quintessential-regular-webfont.woff2') format('woff2'),
-    url('../docs/font2/quintessential-regular-webfont.woff') format('woff');
+    src: url('../font/quintessential-regular-webfont.woff2') format('woff2'),
+    url('../font/quintessential-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'noto_monoregular';
-    src: url('../docs/font1/notomono-regular-webfont.woff2') format('woff2'),
-    url('../docs/font1/notomono-regular-webfont.woff') format('woff');
+    src: url('../font/notomono-regular-webfont.woff2') format('woff2'),
+    url('../font/notomono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 55em;
-    height: 84.5em;
+    max-width: 60vw;
+    height: 185vh;
     margin: auto;
 }
-body a{
+a{
     color: black;
     text-decoration: none;
 }
 
 /*------------- colonne contact ------------------*/
 
-.col_contact{
+div{
     background: rgb(100, 160, 130); /* vert */
-    width: 28em;
+    width: 30vw;
     overflow: auto;
 }
-.photo{
+figure{
     text-align: center;
-    height: 10em;
-    margin: 2em 0 2em 0;
+    height: 10vh;
+    margin: 3vh 0 19vh 0;
 }
-.col_contact h2{
-    font-size: 1.3em;
+div h2{
+    font-size: 1rem;
+    text-transform: uppercase;
     color: rgb(200, 200, 200);
     background: rgb(87, 87, 88); /* couleur gris foncé */
-    padding: 9px 0 8px  0;
+    padding: 2vh 0 2vh  0;
     text-align: center;
 }
 /* --------------- contact ------------------*/
+
 .contact{
     display: flex;
     flex-direction: column;
-    margin: 2em 1em 8em 1em;
+    margin: 3vh 1vw 8vh 1vw;
 }
 .inter{
-    margin: 1em 0 1em 0;
+    margin: 2vh 0 2vh 0;
 }
 /* -----------------  A propos ----------------*/
 
-.a_propos p{
-    margin: 2em 1em 25em 1em;
+.apropos p{
+    margin: 4vh 1vw 55vh 1vw;
 }
 /* --------------  Loisir  ----------------*/
 
@@ -68,116 +68,109 @@ body a{
     justify-content: center;
     align-items: baseline;
     list-style-type: none;
-    padding: 0 1em 0  2em;
+    padding: 0 1vw 0  2vw;
 }
 .loisir li {
-    padding: 2.2em 0.5em 0.3em  0;
+    padding: 2.2vh 0.5vw 0.3vh  0;
 }
+
 /*--------- colonne profession ---------------*/
 
-.col_profession {
+main {
     font-family: 'quintessentialregular';
     background: rgb(230, 230, 230); /* couleur gris claire */
-    width: 60em;
-    padding: 5em 2em 0  2em;
+    width: 60vw;
+    padding: 5vh 2vw 0  2vw;
     overflow: auto;
     margin: 0;
 }
 
 .titre{
     text-align: left;
-    padding: 0 0 1.2em 2em;
+    padding: 0 0 1.2vh 2vw;
 }
 .titre h1{
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'noto_monoregular';
+    text-transform: uppercase;
     margin: 0;
 }
 h1 span{
-    font-size: 0.98em;
+    font-size: 1.7rem;
     color:OliveDrab; /* Antoine en vert */;
 }
 .titre h2{
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }
+
 /* ------------- section formation ---------*/
 
 .formation h2 {
-    font-size: 1.3em;
-    margin: 3em 0 0 2em;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 3vh 0 0 2vw;
     padding: 0;
 }
 .formation ul{
     margin: 0;
-    padding: 2em 0 2em 3em;
-    border-top:4px solid OliveDrab;
+    padding: 2vh 0 2vh 3vw;
+    border-top:4px solid rgb(100, 160, 130);/* vert */
 }
+
 /* ------------- section experience ---------*/
 
 .experience h2 {
-    font-size: 1.3em;
-    margin: 0 0 0 2em;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0 0 0 2vw;
     padding: 0;
 }
 .experience ul {
     margin: 0;
-    padding: 2em 0 2em 3em;
-    border-top:4px solid OliveDrab;
+    padding: 2vh 0 2vh 3vw;
+    border-top:4px solid rgb(100, 160, 130);/* vert */
 }
 .formation, .experience li{
-list-style-image:url("../docs/ipuce.png") ;
+list-style-image:url("../img/ipuce.png") ;
 }
 .formation li:first-of-type{
-    list-style-image:url("../docs/iclavier.png") ;
+    list-style-image:url("../img/iclavier.png") ;
 }
 .formation li:nth-child(5){
-    list-style-image:url("../docs/iclavier.png") ;
+    list-style-image:url("../img/iclavier.png") ;
 }
 /* ------------- section recommendation ---------*/
 
-
-
-.recommendation{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0em 0 0 0;
-}
-.listerecommendation {
+.recommandation{
     display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 2em 0 2em 3em;
-    border-top: 4px solid OliveDrab;
-}
-.recommendation h2{
-    font-size: 1.3em;
-    margin: 0 0 0 2em;
-    padding: 0;
-}
-.recommendation p{
+    flex-wrap: wrap;
+    margin: auto;
 }
 
-.contact1{
-    font-size: 0.8em;
-    flex-basis:50%;
-    padding: 1em 0 0 2em;
+.recommandation h2{
+    font-size: 1.3rem;
+    flex-basis:62%;
+    text-transform: uppercase;
+    padding: 0 13vw 0 1.5vw;
+    border-bottom: 4px solid rgb(100, 160, 130);/* vert */
 }
 
-.contact2{
-    font-size: 0.8em;
-    flex-basis: 50%;
-    padding: 1em 0 0 2em;
+.recommandation address{
+    font-size: 0.8rem;
+    flex-basis:30%;
+    padding: 1vh 0 0 2vw;
 }
+
 /*  -----------------  pour les écrans de moins de 750 px -------------*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 920px) {
     body{
         display: flex;
         flex-direction: column;
-        height: 143.2em;
+        height: 143.2vh;
         margin: auto;
     }
     body a{
@@ -189,16 +182,16 @@ list-style-image:url("../docs/ipuce.png") ;
     .contact{
         display: flex;
         flex-direction: column;
-        margin: 2em 1em 3em 1em;
+        margin: 2vh 1vw 3vh 1vw;
     }
-    .a_propos p {
-        margin: 2em 1em 4em 1em;
+    .apropos p {
+        margin: 2vh 1vw 4vh 1vw;
     }
     .loisir li {
-        padding: 0 0.5em 0  0.5em;
+        padding: 0 0.5vw 0  0.5vw;
     }
-    .col_profession {
-        width: 25em;
+    main {
+        width: 25vw;
     }
 
     .recommendation {
@@ -206,13 +199,13 @@ list-style-image:url("../docs/ipuce.png") ;
     }
 
     .contact1{
-        font-size: 0.8em;
+        font-size: 0.8rem;
         flex-basis: 40%;
-        padding: 0 0 0 1em;
+        padding: 0 0 0 1vw;
     }
     .contact2{
-        font-size: 0.8em;
+        font-size: 0.8rem;
         flex-basis: 40%;
-        padding: 0 0 0 1em;
+        padding: 0 0 0 1vw;
     }
 }
