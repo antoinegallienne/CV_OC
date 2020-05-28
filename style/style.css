@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'quintessentialregular';
     src: url('../font/quintessential-regular-webfont.woff2') format('woff2'),
@@ -14,175 +13,205 @@
     font-style: normal;
 }
 
-body {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 60vw;
-    height: 250vh;
-    margin: auto;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(150, 100, 230); /* couleur gris claire */
-}
-/*------------- colonne contact ------------------*/
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 60%;
+        height: 100%;
+        margin: auto;
+    }
 
-div{
-    background: rgb(100, 160, 130); /* vert */
-    width: 30vw;
-    overflow: auto;
-}
-figure{
-    text-align: center;
-    height: 10vh;
-    margin: 3vh 0 19vh 0;
-}
-div h2{
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: rgb(200, 200, 200);
-    background: rgb(87, 87, 88); /* couleur gris foncé */
-    padding: 2vh 0 2vh  0;
-    text-align: center;
-}
-/* --------------- contact ------------------*/
+    a {
+        color: black;
+        text-decoration: none;
+    }
 
-address{
-    display: flex;
-    flex-direction: column;
-    margin: 3vh 1vw 8vh 1vw;
-}
-.inter{
-    margin: 2vh 0 2vh 0;
-}
-/* -----------------  A propos ----------------*/
+    main a:hover {
+        color: rgb(100, 160, 130); /* vert */
+    }
 
-div p{
-    margin: 4vh 1vw 55vh 1vw;
-}
-/* --------------  Loisir  ----------------*/
+    div a:hover {
+        color: rgb(230, 230, 230); /* couleur gris claire */
+    }
 
-.loisir ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0 1vw 0  2vw;
-}
-.loisir li {
-    font-size: 30px;
-    padding: 2.2vh 0.5vw 0.3vh  0;
-}
+    /*------------- colonne contact ------------------*/
+    div {
+        background: rgb(100, 160, 130); /* vert */
+        width: 60%;
+        overflow: auto;
+    }
 
-/*--------- colonne profession ---------------*/
+    figure {
+        text-align: center;
+        height: auto;
+        /*margin: 7vh 0 14vh 0;*/
+    }
 
-main {
-    font-family: 'quintessentialregular';
-    background: rgb(230, 230, 230); /* couleur gris claire */
-    width: 60vw;
-    padding: 5vh 2vw 0  2vw;
-    overflow: auto;
-    margin: 0;
-}
-/* -----------  titre  -----------  */
-header{
-    text-align: left;
-    padding: 4vh 0 8vh 0;
-}
-header h1{
-    font-size: 2rem;
-    font-family: 'noto_monoregular';
-    text-transform: uppercase;
-    margin: 0;
-}
-h1 span{
-    font-size: 1.9rem;
-    color:OliveDrab; /* Antoine en vert */;
-}
-header h2{
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-}
+    div h2 {
 
-/* ------------- section formation ---------*/
+        text-transform: uppercase;
+        /*letter-spacing: 0.3rem;*/
+        color: rgb(200, 200, 200);
+        background: rgb(87, 87, 88); /* couleur gris foncé */
+        padding: 2vh 0 2vh 0;
+        text-align: center;
+    }
 
-.formation .experience h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    border:4px solid rgb(100, 160, 130);/* vert */
-}
-
-.formation .experience  ul{
-    margin: 0;
-    padding: 2vh 0 2vh 3vw;
-    border:4px solid rgb(100, 160, 130);/* vert */
-}
-
-.formation, .experience li{
-list-style-image:url("../img/ipuce.png") ;
-}
-.formation li:first-of-type{
-    list-style-image:url("../img/iclavier.png") ;
-}
-.formation li:nth-child(5){
-    list-style-image:url("../img/iclavier.png") ;
-}
-/* ------------- section recommendation ---------*/
-
-.recommandation{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.recommandation h2{
-    font-size: 1.3rem;
-    flex-basis:62%;
-    text-transform: uppercase;
-    padding: 0 13vw 0 1.5vw;
-    border-bottom: 4px solid rgb(100, 160, 130);/* vert */
-}
-
-.recommandation address{
-    font-size: 0.8rem;
-    flex-basis:30%;
-    padding: 1vh 0 0 2vw;
-}
-
-/*  -----------------  pour les écrans de moins de 750 px -------------*/
-
-@media screen and (max-width: 920px) {
-    body{
+    /* --------------- contact ------------------*/
+    address {
         display: flex;
         flex-direction: column;
-        height: 143.2vh;
+        margin: 3vh 1vw 5vh 1vw;
+    }
+
+    .inter {
+        margin: 2vh 0 2vh 0;
+    }
+
+    /* -----------------  A propos ----------------*/
+    div p {
+        margin: 4vh 1vw 60vh 1vw;
+    }
+
+    /* --------------  Loisir  ----------------*/
+    .loisir ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 0 1vw 0 2vw;
+    }
+
+    .loisir li {
+        font-size: 30px;
+        padding: 2.2vh 0.5vw 0.3vh 0;
+    }
+
+    /*--------- colonne profession ---------------*/
+    main {
+        font-family: 'quintessentialregular';
+        background: rgb(230, 230, 230); /* couleur gris claire */
+        width: 90%;
+        padding: 5vh 2vw 0 2vw;
+        overflow: auto;
+        margin: 0;
+    }
+
+    /* -----------  titre  -----------  */
+    header {
+        text-align: left;
+        padding: 4vh 0 8vh 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        font-family: 'noto_monoregular';
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h1 span {
+        font-size: 1.9rem;
+        color: OliveDrab; /* Antoine en vert */;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ------------- section formation ---------*/
+    .formation .experience ul {
+        margin: 0;
+        padding: 2vh 0 2vh 3vw;
+        border: 4px solid rgb(100, 160, 130); /* vert */
+    }
+
+    .formation, .experience li {
+        list-style-image: url("../img/ipuce.png");
+    }
+    .formation li:first-of-type {
+        list-style-image: url("../img/iclavier.png");
+    }
+    .formation li:nth-child(5) {
+        list-style-image: url("../img/iclavier.png");
+    }
+
+    .formation h2 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+    }
+
+    .experience h2 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+    }
+
+
+    /* ------------- section recommendation ---------*/
+    .recommandation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .recommandation h2 {
+        font-size: 1.3rem;
+        flex: 0 1 62%;
+        text-transform: uppercase;
+        padding: 0 13vw 0 1.5vw;
+        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+    }
+
+    .recommandation address {
+        font-size: 0.9rem;
+        flex: 0 1 30%;
+        padding: 1vh 0 0 2vw;
+    }
+
+/*  -----------------  pour les écrans de 850px à 1400px tablette  -------------*/
+
+@media screen and (min-width:850px) and (max-width:1400px){
+    body{
+        max-width: 80%;
+        height: 100%;
         margin: auto;
     }
     body a{
         color: black;
     }
-    .col_contact{
-        min-width: 29em;
+    div{
+        width: 60%;
     }
-    .contact{
+    div h2{
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+    figure{
+        text-align: center;
+        height: auto;
+    }
+    address{
         display: flex;
         flex-direction: column;
-        margin: 2vh 1vw 3vh 1vw;
+        font-size: 1.1rem;
+        margin: 2vh 2vw 3vh 3vw;
     }
     .apropos p {
-        margin: 2vh 1vw 4vh 1vw;
+        margin: 2vh 2vw 45vh 3vw;
     }
     .loisir li {
         padding: 0 0.5vw 0  0.5vw;
     }
     main {
-        width: 25vw;
+        width: 100%;
     }
 
     .recommendation {
@@ -191,13 +220,68 @@ list-style-image:url("../img/ipuce.png") ;
 
     .contact1{
         font-size: 0.8rem;
-        flex-basis: 40%;
+        flex: 0 1 40%;
         padding: 0 0 0 1vw;
     }
     .contact2{
         font-size: 0.8rem;
-        flex-basis: 40%;
+        flex: 0 1 40%;
         padding: 0 0 0 1vw;
     }
 }
 
+/*  -----------------  pour les écrans de moins de 849 px téléphone  -------------*/
+
+@media screen and (max-width:849px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    body a{
+        color: black;
+    }
+    div{
+        width: 100%;
+    }
+    div h2{
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+    figure{
+        text-align: center;
+        height: auto;
+    }
+    address{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        margin: 2vh 2vw 3vh 3vw;
+    }
+    .apropos p {
+        margin: 2vh 2vw 4vh 3vw;
+    }
+    .loisir li {
+        padding: 0 0.5vw 0  0.5vw;
+    }
+    main {
+         width: 100%;
+    }
+
+    .recommendation {
+        padding: 0 ;
+    }
+
+    .contact1{
+        font-size: 0.8rem;
+        flex: 0 1 40%;
+        padding: 0 0 0 1vw;
+    }
+    .contact2{
+        font-size: 0.8rem;
+        flex: 0 1 40%;
+        padding: 0 0 0 1vw;
+    }
+}
