@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'quintessentialregular';
-    src: url('../font/quintessential-regular-webfont.woff2') format('woff2'),
-    url('../font/quintessential-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'noto_monoregular';
     src: url('../font/notomono-regular-webfont.woff2') format('woff2'),
     url('../font/notomono-regular-webfont.woff') format('woff');
@@ -13,18 +6,18 @@
     font-style: normal;
 }
 
-    body {
-        display: flex;
-        flex-direction: row-reverse;
-        max-width: 60%;
-        height: 100%;
-        margin: auto;
-    }
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 60%;
+    height: 100%;
+    margin: auto;
+}
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
+a {
+    color: black;
+    text-decoration: none;
+}
 
     main a:hover {
         color: #64A082; /* vert */
@@ -41,13 +34,13 @@
         overflow: auto;
     }
 
-    figure {
-        text-align: center;
-        height: auto;
-        /*margin: 7vh 0 14vh 0;*/
-    }
+figure {
+    text-align: center;
+    height: auto;
+    /*margin: 7vh 0 14vh 0;*/
+}
 
-    div h2 {
+div h2 {
 
         text-transform: uppercase;
         /*letter-spacing: 0.3rem;*/
@@ -57,34 +50,34 @@
         text-align: center;
     }
 
-    /* --------------- contact ------------------*/
-    address {
-        display: flex;
-        flex-direction: column;
-        margin: 3vh 1vw 5vh 1vw;
-    }
+/* --------------- contact ------------------*/
+address {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 1vw 5vh 1vw;
+}
 
-    .inter {
-        margin: 2vh 0 2vh 0;
-    }
+.inter {
+    margin: 2vh 0 2vh 0;
+}
 
-    /* -----------------  A propos ----------------*/
-    div p {
-        margin: 4vh 1vw 60vh 1vw;
-    }
+/* -----------------  A propos ----------------*/
+div p {
+    margin: 4vh 1vw 60vh 1vw;
+}
 
-    /* --------------  Loisir  ----------------*/
-    .loisir ul {
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
-        padding: 0 1vw 0 2vw;
-    }
+/* --------------  Loisir  ----------------*/
+.loisir ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0 1vw 0 2vw;
+}
 
-    .loisir li {
-        font-size: 30px;
-        padding: 2.2vh 0.5vw 0.3vh 0;
-    }
+.loisir li {
+    font-size: 30px;
+    padding: 2.2vh 0.5vw 0.3vh 0;
+}
 
     /*--------- colonne profession ---------------*/
     main {
@@ -96,29 +89,29 @@
         margin: 0;
     }
 
-    /* -----------  titre  -----------  */
-    header {
-        text-align: left;
-        padding: 4vh 0 8vh 0;
-    }
+/* -----------  titre  -----------  */
+header {
+    text-align: left;
+    padding: 4vh 0 8vh 0;
+}
 
-    header h1 {
-        font-size: 2rem;
-        font-family: 'noto_monoregular';
-        text-transform: uppercase;
-        margin: 0;
-    }
+header h1 {
+    font-size: 2rem;
+    font-family: 'noto_monoregular';
+    text-transform: uppercase;
+    margin: 0;
+}
 
     h1 span {
         font-size: 1.9rem;
         color: #64A082; /* Antoine en vert */;
     }
 
-    header h2 {
-        font-size: 1.2rem;
-        margin: 0;
-        padding: 0;
-    }
+header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
 
     /* ------------- section formation ---------*/
     .formation .experience ul {
@@ -126,15 +119,15 @@
         padding: 2vh 0 2vh 3vw;
     }
 
-    .formation, .experience li {
-        list-style-image: url("../img/ipuce.png");
-    }
-    .formation li:first-of-type {
-        list-style-image: url("../img/iclavier.png");
-    }
-    .formation li:nth-child(5) {
-        list-style-image: url("../img/iclavier.png");
-    }
+.formation, .experience li {
+    list-style-image: url("../img/ipuce.png");
+}
+.formation li:first-of-type {
+    list-style-image: url("../img/iclavier.png");
+}
+.formation li:nth-child(5) {
+    list-style-image: url("../img/iclavier.png");
+}
 
     .formation h2 {
         font-size: 1.3rem;
@@ -153,13 +146,13 @@
     }
 
 
-    /* ------------- section recommendation ---------*/
-    .recommandation {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-    }
+/* ------------- section recommendation ---------*/
+.recommandation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
 
     .recommandation h2 {
         font-size: 1.3rem;
@@ -266,7 +259,7 @@
         padding: 0 0.5vw 0  0.5vw;
     }
     main {
-         width: 100%;
+        width: 100%;
     }
 
     .recommendation {
