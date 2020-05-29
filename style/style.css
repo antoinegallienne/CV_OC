@@ -27,16 +27,16 @@
     }
 
     main a:hover {
-        color: rgb(100, 160, 130); /* vert */
+        color: #64A082; /* vert */
     }
 
     div a:hover {
-        color: rgb(230, 230, 230); /* couleur gris claire */
+        color: #E6E6E6; /* couleur gris claire */
     }
 
     /*------------- colonne contact ------------------*/
     div {
-        background: rgb(100, 160, 130); /* vert */
+        background: #64A082; /* vert */
         width: 60%;
         overflow: auto;
     }
@@ -52,7 +52,7 @@
         text-transform: uppercase;
         /*letter-spacing: 0.3rem;*/
         color: rgb(200, 200, 200);
-        background: rgb(87, 87, 88); /* couleur gris foncé */
+        background: #575757; /* couleur gris foncé */
         padding: 2vh 0 2vh 0;
         text-align: center;
     }
@@ -89,7 +89,7 @@
     /*--------- colonne profession ---------------*/
     main {
         font-family: 'quintessentialregular';
-        background: rgb(230, 230, 230); /* couleur gris claire */
+        background: #E6E6E6; /* couleur gris claire */
         width: 90%;
         padding: 5vh 2vw 0 2vw;
         overflow: auto;
@@ -111,7 +111,7 @@
 
     h1 span {
         font-size: 1.9rem;
-        color: OliveDrab; /* Antoine en vert */;
+        color: #64A082; /* Antoine en vert */;
     }
 
     header h2 {
@@ -124,7 +124,6 @@
     .formation .experience ul {
         margin: 0;
         padding: 2vh 0 2vh 3vw;
-        border: 4px solid rgb(100, 160, 130); /* vert */
     }
 
     .formation, .experience li {
@@ -142,7 +141,7 @@
         text-transform: uppercase;
         margin: 0;
         padding: 0;
-        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+        border-bottom: 4px solid #64A082; /* vert */
     }
 
     .experience h2 {
@@ -150,7 +149,7 @@
         text-transform: uppercase;
         margin: 0;
         padding: 0;
-        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+        border-bottom: 4px solid #64A082; /* vert */
     }
 
 
@@ -164,15 +163,15 @@
 
     .recommandation h2 {
         font-size: 1.3rem;
-        flex: 0 1 62%;
+        flex: auto;
         text-transform: uppercase;
         padding: 0 13vw 0 1.5vw;
-        border-bottom: 4px solid rgb(100, 160, 130); /* vert */
+        border-bottom: 4px solid #64A082; /* vert */
     }
 
     .recommandation address {
         font-size: 0.9rem;
-        flex: 0 1 30%;
+        flex: none;
         padding: 1vh 0 0 2vw;
     }
 
@@ -188,7 +187,7 @@
         color: black;
     }
     div{
-        width: 60%;
+        width: 62%;
     }
     div h2{
         font-size: 1.4rem;
@@ -202,10 +201,10 @@
         display: flex;
         flex-direction: column;
         font-size: 1.1rem;
-        margin: 2vh 2vw 3vh 3vw;
+        margin: 4vh 2vw 5vh 3vw;
     }
     .apropos p {
-        margin: 2vh 2vw 45vh 3vw;
+        margin: 4vh 2vw 60vh 3vw;
     }
     .loisir li {
         padding: 0 0.5vw 0  0.5vw;
@@ -284,4 +283,11 @@
         flex: 0 1 40%;
         padding: 0 0 0 1vw;
     }
+
+    .recommandation h2 {
+        padding: 0 50vw 0 1.5vw;
+    }
+
+
+
 }
