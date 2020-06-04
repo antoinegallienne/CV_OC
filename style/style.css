@@ -15,18 +15,17 @@
     font-style: normal;
 }
 
-/*  -----------------  pour les écrans de moins de 849px téléphone  -------------*/
-
 body{
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    max-width: 100%;
     height: 100%;
     margin: auto;
 }
 
 body a{
     color: black;
+    text-decoration: none;
 }
 main a:hover {
     color: #64A082; /* vert */
@@ -90,17 +89,20 @@ header h2 {
 .recommandation ul{
     display: flex;
     flex-direction: column;
-    padding: 0 5vw 0 9vw;
+    padding: 0 5vw 0 0vw;
     list-style-image:none;
 }
 .recommandation li{
     font-size: 0.9rem;
     list-style-type: none;
     line-height:1.1rem;
-    padding: 3vh 0 2vh 0;
+    margin: 0;
+   /* padding: 0vh 0 2vh 0;*/
 }
 
 div{
+    display: flex;
+    flex-direction: column;
     background: #64A082; /* vert */
     width: 100%;
     overflow: auto;
@@ -122,34 +124,33 @@ figure{
 }
     
 address{
-    display: flex;
-    flex-direction: column;
+  /*  display: flex;
+    flex-direction: column;*/
     font-size: 1.1rem;
-    padding: 0;
     margin: 0 2vw 5vh 5vw;
 }
 .inter {
-        margin: 2vh 0 2vh 0;
+    margin: 2vh 0 1vh 0;
     }
-    
 .apropos p {
-    margin: 2vh 2vw 4vh 3vw;
+    margin: 2vh 8vw 0 5vw;
 }
-    
 
 /* --------------  Loisir  ----------------*/
 
+.loisir {
+    margin-top: auto;
+}
 .loisir ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
-
 .loisir li {
     font-size: 2.5rem;
 }
 
-/*  -----------------  pour les écrans de moins de 768 px téléphone  -------------*/
+/*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
 /* -------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -157,134 +158,63 @@ address{
     body{
     display: flex;
     flex-direction: row-reverse;
-    min-width: 20%;
-    height: 100%;
+    max-width: 90%;
     margin: auto;
     }
 
-    body a{
-        color: black;
-    }
-    main a:hover {
-        color: #64A082; /* vert */
-    }
-    div a:hover {
-        color: #E6E6E6; /* gris claire */
-    }
-
     main {
-        font-family: 'quintessentialregular';
-        background: #E6E6E6; /*  gris claire */
-        width: 80%;
+        width: 75%;
     }
 
     header {
         padding: 10.9vh 0 9vh 9vw;
     }
-
-    header h1 {
-        font-size: 2rem;
-        font-family: 'noto_monoregular';
-        text-transform: uppercase;
-        margin: 0;
-    }
-    h1 span {
-        font-size: 1.9rem;
-        color: #64A082; /* Antoine en vert */;
-    }
-    header h2 {
-        margin: 0;
-    }
-
      /* ------------- main formation/experience ---------*/
 
     .formation h2,
     .experience h2,
     .recommandation h2 {
         font-size: 1.4rem;
-        text-transform: uppercase;
-        border-bottom: 4px solid #64A082; /* vert */
         margin: 0 3vw 0 5vw;
         padding: 0 5vw 1vh 0;
-    }
-
-    .formation ul,
-    .experience ul {
-        margin: 0;
-        padding: 5vh 5vw 8vh 9vw;
-    }
-
-    .formation, 
-    .experience li {
-        list-style-image: url("../img/ipuce.png");
-        font-size: 1.1rem;
-        line-height:1.7rem;
-    }
-    .formation li:first-of-type {
-        list-style-image: url("../img/iclavier.png");
-    }
-    .formation li:nth-child(5) {
-        list-style-image: url("../img/iclavier.png");
     }
 
     .recommandation ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        list-style-image:none;
     }
     .recommandation li{
-        font-size: 0.5rem;
-        list-style-type: none;
-        line-height:1.1rem;
+        font-size: 0.4rem;
+        padding: 0;
     }
 
     div{
-        background: #64A082; /* vert */
         width: 45%;
-        overflow: auto;
     }
-        
-    div h2{
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        color: rgb(200, 200, 200);
-        background: #575757; /* gris foncé */
-        text-align: center;
-        padding: 2vh 0 2vh 0;
-    }
-       
-    figure{
-        text-align: center;
-        height: auto;
-    }
-        
-    address{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.1rem;
-        padding: 0;
-        margin: 0 2vw 5vh 5vw;
-    }
-    .inter {
-            margin: 2vh 0 2vh 0;
-        }
-        
     .apropos p {
-        margin: 2vh 2vw 4vh 3vw;
+        margin: 3vh 5vw 0 5vw;
     }
-        
+}
 
-    /* --------------  Loisir  ----------------*/
+/*  -----------------  pour les grands écrans 1200px      ------------------------*/
+/* -------------------------------------------------------------------------------*/
 
-    .loisir ul {
+@media screen and (min-width: 1200px) {
+
+    body{
         display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
+        /*flex-direction: row-reverse;*/
+        max-width: 80%;
+        margin: auto;
     }
-
-    .loisir li {
-        font-size: 2.5rem;
+    main {
+        width: 60%;
+    }
+    div{
+        width: 40%;
+    }
+    .apropos p {
+        margin: 3vh 5vw 0 3vw;
     }
 }
