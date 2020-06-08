@@ -1,16 +1,15 @@
 
 @font-face {
-    font-family: 'quintessentialregular';
-    src: url('../font/quintessential-regular-webfont.woff2') format('woff2'),
-    url('../font/quintessential-regular-webfont.woff') format('woff');
+    font-family: 'ModernSans-Light';
+    src: url('../font/ModernSans-Light.otf') format('opentype'),
+    url('../font/ModernSans-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'noto_monoregular';
-    src: url('../font/notomono-regular-webfont.woff2') format('woff2'),
-    url('../font/notomono-regular-webfont.woff') format('woff');
+    font-family: 'Louis George Cafe';
+    src: url('../font/Louis George Cafe.ttf') format('truetype'),
+    url('../font/Louis George Cafe Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,82 +27,118 @@ body a{
     text-decoration: none;
 }
 main a:hover {
-    color: #64A082; /* vert */
+    color: #64A082;
 }
 div a:hover {
-    color: #E6E6E6; /* gris claire */
+    color: #E6E6E6;
 }
 
 
 main {
-    font-family: 'quintessentialregular';
-    background: #E6E6E6; /*  gris claire */
+    font-family: 'Louis George Cafe';
+    background: #E6E6E6;
     width: 100%;
 }
 header {
-    padding: 3.6vh 0 8vh 10vw;
+    padding: 7vh 0 9vh 5vw;
 }
+
 header h1 {
-    font-size: 2rem;
-    font-family: 'noto_monoregular';
+    font-family: 'ModernSans-Light';
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin: 0;
 }
 h1 span {
-    font-size: 1.9rem;
-    color: #64A082; /* Antoine en vert */;
+    font-size: 2.4rem;
+    color: #64A082;
+}
+h2 span {
+    border-bottom: solid #64A082;
 }
 header h2 {
+    font-family: 'Louis George Cafe';
     margin: 0;
 }
 
  /* ------------- section formation/experience ---------*/
 
-.formation h2,
-.experience h2,
-.recommandation h2 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    border-bottom: 4px solid #64A082; /* vert */
-    margin: 0 0 0 5vw;
-    padding: 0 5vw 0 0;
+.activite1 li,
+.activite2 li {
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 0;
 }
-.formation ul,
-.experience ul {
+
+.activite1 img,
+.activite2 img{
+    padding-top:1vh ;
+    height: 2vh;
     margin: 0;
-    padding: 5vh 5vw 8vh 9vw;
 }
-.formation, 
-.experience li {
-    list-style-image: url("../img/ipuce.png");
+.activite2 i,
+.activite1 i,
+.recommandation i{
+    color: #64A082;
+}
+.activite1 h2,
+.activite2 h2,
+.recommandation h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid #64A082;
+    margin: 0 5vw 4vh 5vw ;
+    padding-bottom: 0.5vw;
+}
+
+.activite1 h3,
+.activite2 h3 {
+    font-size: 0.9rem;
+    padding: 0 8vw 0 1vw;
+    margin: 0;
+}
+.activite1 h4,
+.activite2 h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-left: 7vw;
+    margin: 0;
+}
+.activite1 h5,
+.activite2 h5 {
     font-size: 1.1rem;
-    line-height:1.7rem;
+    font-weight: normal;
+    padding: 2vh 0 2vh 7vw;
+    margin: 0 2vw 0 0;
 }
-.formation li:first-of-type {
-    list-style-image: url("../img/iclavier.png");
+.activite1 p,
+.activite2 p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 5vw 0 7vw;
 }
-.formation li:nth-child(5) {
-    list-style-image: url("../img/iclavier.png");
+.activite2 h3 {
+    padding: 0 2.5vw 0 1vw;
+}
+address span {
+    text-transform: uppercase;
 }
 
 .recommandation ul{
     display: flex;
     flex-direction: column;
-    padding: 0 5vw 0 0vw;
-    list-style-image:none;
+    padding: 0;
 }
 .recommandation li{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     list-style-type: none;
-    line-height:1.1rem;
-    margin: 0;
-   /* padding: 0vh 0 2vh 0;*/
+    line-height:1rem;
 }
 
 div{
     display: flex;
     flex-direction: column;
-    background: #64A082; /* vert */
+    background: #64A082;
     width: 100%;
     overflow: auto;
 }
@@ -112,20 +147,24 @@ div h2{
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    color: rgb(200, 200, 200);
-    background: #575757; /* gris foncé */
+    color:#64A082;
+    background: #222;
     text-align: center;
-    padding: 2vh 0 2vh 0;
+    padding: 2vh 0;
 }
    
 figure{
     text-align: center;
     height: auto;
 }
-    
+
+figure img{
+    border: solid #AEA082;
+    border-radius: 50%;
+    margin: 0;
+}
+
 address{
-  /*  display: flex;
-    flex-direction: column;*/
     font-size: 1.1rem;
     margin: 0 2vw 5vh 5vw;
 }
@@ -147,7 +186,11 @@ address{
     list-style-type: none;
 }
 .loisir li {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 2.4rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.1rem ;
 }
 
 /*  -----------------  pour les écrans moyens de 768px tablette  -------------*/
@@ -155,66 +198,133 @@ address{
 
 @media screen and (min-width: 768px) {
 
-    body{
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 90%;
-    margin: auto;
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 90%;
+        margin: auto;
     }
 
     main {
-        width: 75%;
+        width: 100%;
     }
 
     header {
-        padding: 10.9vh 0 9vh 9vw;
+        padding: 10vh 0 11vh 4vw;
     }
-     /* ------------- main formation/experience ---------*/
 
-    .formation h2,
-    .experience h2,
+
+    .activite1 h2,
+    .activite2 h2,
     .recommandation h2 {
-        font-size: 1.4rem;
-        margin: 0 3vw 0 5vw;
-        padding: 0 5vw 1vh 0;
+        margin: 0 5vw 4vh 4vw;
+        padding-bottom: 1.5vh;
     }
 
-    .recommandation ul{
+    .activite1 h3,
+    .activite2 h3 {
+        padding: 0 2vw 0 1vw;
+    }
+
+    .activite1 h4,
+    .activite2 h4 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+    .activite1 h5,
+    .activite2 h5 {
+        font-size: 1.1rem;
+        font-weight: normal;
+        padding: 2vh 0;
+        margin-right: 2vw;
+    }
+    .activite1 p,
+    .activite2 p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 5vw 0 0;
+    }
+    .activite1 h3 {
+        padding: 0 5.5vw 0 1vw;
+    }
+    /* ------------- main formation/experience ---------*/
+    .activite1 h3 {
+        padding: 0 7vw 0 1vw;
+    }
+    .activite2 h3 {
+        padding: 0 4vw 0 1vw;
+    }
+    .recommandation ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .recommandation li{
-        font-size: 0.4rem;
         padding: 0;
     }
-
-    div{
-        width: 45%;
+    .recommandation li {
+        font-size: 0.4rem;
     }
+
+    div {
+        width: 65%;
+    }
+
     .apropos p {
-        margin: 3vh 5vw 0 5vw;
+        margin: 4vh 5vw 0 5vw;
+    }
+
+    .loisir ul {
+        padding: 2vh;
     }
 }
-
 /*  -----------------  pour les grands écrans 1200px      ------------------------*/
 /* -------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
 
-    body{
+    body {
         display: flex;
-        /*flex-direction: row-reverse;*/
         max-width: 80%;
         margin: auto;
     }
+
     main {
-        width: 60%;
+        width: 70%;
     }
-    div{
-        width: 40%;
+
+    header {
+        padding: 12vh 0 13vh 6vw;
     }
+
+    .activite1 img,
+    .activite2 img {
+        padding: 1vh 0.5vw 0 3vw;
+        height: 2vh;
+        margin: 0;
+    }
+
+    .activite1 h2,
+    .activite2 h2,
+    .recommandation h2 {
+        padding: 0 0 1.5vh 0;
+        margin: 0 5vw 4vh 6vw;
+    }
+
+    .activite1 h3,
+    .activite2 h3 {
+
+    }
+    .recommandation li{
+        margin: 0 0 0 1vw;
+    }
+
+    div {
+        width: 35%;
+    }
+
     .apropos p {
         margin: 3vh 5vw 0 3vw;
     }
+
 }
