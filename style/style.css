@@ -63,26 +63,26 @@ header h2 {
 
  /* ------------- section formation/experience ---------*/
 
-.activite1 li,
-.activite2 li {
+.formation li,
+.expérience li {
     display: flex;
     flex-direction: row;
     padding: 3vh 0;
 }
 
-.activite1 img,
-.activite2 img{
+.formation img,
+.expérience img{
     padding-top:1vh ;
     height: 2vh;
     margin: 0;
 }
-.activite2 i,
-.activite1 i,
+.formation i,
+.expérience i,
 .recommandation i{
     color: #64A082;
 }
-.activite1 h2,
-.activite2 h2,
+.formation h2,
+.expérience h2,
 .recommandation h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -91,33 +91,33 @@ header h2 {
     padding-bottom: 0.5vw;
 }
 
-.activite1 h3,
-.activite2 h3 {
+.formation h3,
+.expérience h3 {
     font-size: 0.9rem;
     padding: 0 8vw 0 1vw;
     margin: 0;
 }
-.activite1 h4,
-.activite2 h4 {
+.formation h4,
+.expérience h4 {
     font-size: 1.2rem;
     text-transform: uppercase;
     padding-left: 7vw;
     margin: 0;
 }
-.activite1 h5,
-.activite2 h5 {
+.formation h5,
+.expérience h5 {
     font-size: 1.1rem;
     font-weight: normal;
     padding: 2vh 0 2vh 7vw;
     margin: 0 2vw 0 0;
 }
-.activite1 p,
-.activite2 p {
+.formation p,
+.expérience p {
     font-size: 1rem;
     margin: 0;
     padding: 0 5vw 0 7vw;
 }
-.activite2 h3 {
+.expérience h3 {
     padding: 0 2.5vw 0 1vw;
 }
 address span {
@@ -214,46 +214,46 @@ address{
     }
 
 
-    .activite1 h2,
-    .activite2 h2,
+    .formation h2,
+    .expérience h2,
     .recommandation h2 {
         margin: 0 5vw 4vh 4vw;
         padding-bottom: 1.5vh;
     }
 
-    .activite1 h3,
-    .activite2 h3 {
+    .formation h3,
+    .expérience h3 {
         padding: 0 2vw 0 1vw;
     }
 
-    .activite1 h4,
-    .activite2 h4 {
+    .formation h4,
+    .expérience h4 {
         font-size: 1.2rem;
         text-transform: uppercase;
         padding: 0;
         margin: 0;
     }
-    .activite1 h5,
-    .activite2 h5 {
+    .formation h5,
+    .expérience h5 {
         font-size: 1.1rem;
         font-weight: normal;
         padding: 2vh 0;
         margin-right: 2vw;
     }
-    .activite1 p,
-    .activite2 p {
+    .formation p,
+    .expérience p {
         font-size: 1rem;
         margin: 0;
         padding: 0 5vw 0 0;
     }
-    .activite1 h3 {
+    .formation h3 {
         padding: 0 5.5vw 0 1vw;
     }
     /* ------------- main formation/experience ---------*/
-    .activite1 h3 {
+    .formation h3 {
         padding: 0 7vw 0 1vw;
     }
-    .activite2 h3 {
+    .expérience h3 {
         padding: 0 4vw 0 1vw;
     }
     .recommandation ul {
@@ -294,25 +294,20 @@ address{
     }
 
     header {
-        padding: 12vh 0 13vh 6vw;
-    }
-
-    .activite1 img,
-    .activite2 img {
-        padding: 1vh 0.5vw 0 3vw;
+        padding: 12vh 0 22vh 6vw;
         height: 2vh;
         margin: 0;
     }
 
-    .activite1 h2,
-    .activite2 h2,
+    .formation h2,
+    .expérience h2,
     .recommandation h2 {
         padding: 0 0 1.5vh 0;
         margin: 0 5vw 4vh 6vw;
     }
 
-    .activite1 h3,
-    .activite2 h3 {
+    .formation h3,
+    .expérience h3 {
 
     }
     .recommandation li{
