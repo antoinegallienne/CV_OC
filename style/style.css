@@ -95,8 +95,9 @@ i[class*='dot'] {
     padding-bottom: 0.5vw;
 }
 
-.formation h4,
-.expérience h4 {
+.formation span,
+.expérience span {
+    width: 4%;
     font-size: 0.9rem;
     padding: 0 8vw 0 1vw;
     margin: 0;
@@ -121,8 +122,8 @@ i[class*='dot'] {
     margin: 0;
     padding: 0 5vw 0 7vw;
 }
-.expérience h4 {
-    padding: 0 2.5vw 0 1vw;
+.expérience p {
+    padding-right: 1vw;
 }
 address span {
     text-transform: uppercase;
@@ -242,7 +243,6 @@ i[class*='unity'] {
         height: auto;
     }
 
-
     i[class*='fa-circle']{
         padding:0.85vh 0  0 2.1vw ;
         font-size: 0.5rem;
@@ -261,8 +261,8 @@ i[class*='unity'] {
         padding-bottom: 1.5vh;
     }
 
-    .formation h4,
-    .expérience h4 {
+    .formation span,
+    .expérience span {
         padding: 0 2vw 0 1vw;
     }
 
@@ -287,10 +287,9 @@ i[class*='unity'] {
         padding: 0 5vw 0 0;
     }
 
-    .formation h4 {
-        padding: 0 5.5vw 0 1vw;
+    li section {
+        padding: 0 0 0 3vw;
     }
-
     .recommandation ul {
         display: flex;
         flex-direction: row;
